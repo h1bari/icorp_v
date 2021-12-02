@@ -15,6 +15,19 @@
 .container {
   max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0 0 20px 10px #0000001A;
+  border-radius: 20px;
+}
+header .logo img {
+  width: 268px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+@mixin flex($justify,$direction:row){
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin font($size,$weight:500){
+  font-size: $size;
+  font-weight: $weight;
+}
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
