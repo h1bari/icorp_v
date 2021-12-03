@@ -1,5 +1,7 @@
 @import "mixins";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+$main_color: #60E4C7;
 * {
   margin: 0;
   padding: 0;
@@ -13,19 +15,117 @@
   line-height: 1.5;
 }
 
+a.button {
+  background: $main_color;
+  padding: 10px 40px;
+  border-radius: 20px;
+  @include font(20px, 500);
+  color: white;
+  cursor: pointer;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots li button {
+  line-height: 0;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.slick-dots li button:before {
+  content: '';
+}
+
+.slick-active button {
+  box-shadow: 0 0 10px 0 #00000040;
+  background: $main_color !important;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  font-size: 0;
+  background: none;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.slick-prev {
+  transform: rotate(225deg);
+}
+
+.slick-next {
+  transform: rotate(45deg);
+  right: 0;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
-header{
-  @include flex(space-between,row);
-  box-shadow: 0 0 20px 10px #0000001A;
-  border-radius: 20px;
-  .logo{
-    img{
-      width: 268px;
+
+.header_section {
+  padding: 25px 0;
+
+  header {
+    padding: 18px 30px;
+    @include flex(space-between);
+    box-shadow: 0 0 20px 10px #0000001A;
+    border-radius: 20px;
+
+    .logo {
+      font-size: 0;
+
+      img {
+        width: 150px;
+      }
+    }
+
+    .head_menu {
+      .menu {
+        li {
+          display: inline-block;
+          margin: 0 15px;
+
+          a {
+            @include font(18px);
+          }
+        }
+      }
     }
   }
 
+  .header_slider {
+    .fade {
+      position: relative;
+
+      .slide {
+        @include flex(space-around);
+
+        .slide_content {
+
+        }
+
+        .slide_img {
+          img {
+            width: 450px;
+          }
+        }
+      }
+    }
+
+  }
 }
+

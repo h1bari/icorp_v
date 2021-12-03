@@ -4,9 +4,10 @@
   align-items: center;
   flex-direction: $direction;
 }
-@mixin font($size,$weight:500){
+@mixin font($size,$weight:400){
   font-size: $size;
   font-weight: $weight;
+  color: black;
 }
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
   content: $content;
