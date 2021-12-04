@@ -22,8 +22,12 @@ a.button {
   @include font(17px, 400);
   color: white;
   cursor: pointer;
-  box-shadow: 0 0 20px 0px #00000026;
+  box-shadow: 0 0 20px 0 #00000026;
+  transition: .5s;
 
+  &:hover {
+    filter: brightness(0.9);
+  }
 }
 
 .slick-dots {
@@ -77,7 +81,16 @@ a.button {
   width: 100%;
   margin: 0 auto;
 }
-
+.section_head{
+  padding: 50px 0;
+  h2{
+    @include font(40px,700);
+    text-align: center;
+  }
+}
+.block_wrap{
+  @include flex(space-around);
+}
 .header_section {
   padding: 25px 0;
 
@@ -112,17 +125,20 @@ a.button {
   .header_slider {
     .fade {
       position: relative;
+      padding: 100px 0 50px;
 
       .slide {
         @include flex(space-around);
 
         .slide_content {
-          h2{
-            @include font(40px,700);
+          h2 {
+            @include font(40px, 700);
           }
-          .connect_button{
+
+          .connect_button {
             margin-top: 30px;
             display: flex;
+
           }
         }
 
