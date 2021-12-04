@@ -16,11 +16,12 @@ a.button {
   background: #60E4C7;
   padding: 10px 40px;
   border-radius: 20px;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
   color: black;
   color: white;
   cursor: pointer;
+  box-shadow: 0 0 20px 0px #00000026;
 }
 
 .slick-dots {
@@ -111,8 +112,17 @@ a.button {
   align-items: center;
   flex-direction: row;
 }
+.header_section .header_slider .fade .slide .slide_content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+.header_section .header_slider .fade .slide .slide_content .connect_button {
+  margin-top: 30px;
+  display: flex;
+}
 .header_section .header_slider .fade .slide .slide_img img {
-  width: 450px;
+  width: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */

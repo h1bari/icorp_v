@@ -19,9 +19,11 @@ a.button {
   background: $main_color;
   padding: 10px 40px;
   border-radius: 20px;
-  @include font(20px, 500);
+  @include font(17px, 400);
   color: white;
   cursor: pointer;
+  box-shadow: 0 0 20px 0px #00000026;
+
 }
 
 .slick-dots {
@@ -115,12 +117,18 @@ a.button {
         @include flex(space-around);
 
         .slide_content {
-
+          h2{
+            @include font(40px,700);
+          }
+          .connect_button{
+            margin-top: 30px;
+            display: flex;
+          }
         }
 
         .slide_img {
           img {
-            width: 450px;
+            width: 400px;
           }
         }
       }
