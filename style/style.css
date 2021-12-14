@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-a.button {
+.button {
   background: #60E4C7;
   padding: 10px 40px;
   border-radius: 20px;
@@ -29,7 +29,7 @@ a.button {
   box-shadow: 0 0 20px 0 #00000026;
   transition: 0.5s;
 }
-a.button:hover {
+.button:hover {
   filter: brightness(0.9);
 }
 
@@ -256,6 +256,46 @@ a.button:hover {
 }
 .mission_section .mission_wrap .mission_img img {
   width: 100%;
+}
+
+.main_form {
+  padding: 60px 0;
+}
+
+.form_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.form_wrap form {
+  width: 400px;
+}
+.form_wrap form label, .form_wrap form input {
+  display: block;
+}
+.form_wrap form label {
+  margin-left: 30px;
+  font-size: 13px;
+}
+.form_wrap form input {
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+}
+.form_wrap form .connect_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+footer {
+  padding: 100px;
+  background: #60E4C7;
 }
 
 /*# sourceMappingURL=style.css.map */
