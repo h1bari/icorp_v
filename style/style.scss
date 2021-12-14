@@ -206,13 +206,39 @@ a.button {
       .item_body {
         height: 200px;
         max-height: 200px;
-        @include flex(center, column);
+        @include flex(center);
         padding: 20px;
 
         p {
           @include font(13px);
           margin-bottom: 10px;
           text-align: center;
+        }
+      }
+
+      .item_button {
+        @include flex(center);
+        align-self: flex-end;
+        position: relative;
+        width: 100%;
+        transition: .5s;
+
+        &:before {
+          @include pseudo();
+          height: 1px;
+          background: #000;
+          width: 65%;
+          top: 0;
+        }
+        &:hover{
+          transform: scale(1.1);
+        }
+
+        a {
+          @include font(17px);
+          text-align: center;
+          width: 100%;
+          padding: 10px;
         }
       }
     }

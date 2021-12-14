@@ -199,7 +199,7 @@ a.button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   padding: 20px;
 }
@@ -209,6 +209,39 @@ a.button:hover {
   color: black;
   margin-bottom: 10px;
   text-align: center;
+}
+.our_tariff .tariff_wrap .tariff_item .item_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  position: relative;
+  width: 100%;
+  transition: 0.5s;
+}
+.our_tariff .tariff_wrap .tariff_item .item_button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1px;
+  background: #000;
+  width: 65%;
+  top: 0;
+}
+.our_tariff .tariff_wrap .tariff_item .item_button:hover {
+  transform: scale(1.1);
+}
+.our_tariff .tariff_wrap .tariff_item .item_button a {
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
