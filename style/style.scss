@@ -230,7 +230,8 @@ a.button {
           width: 65%;
           top: 0;
         }
-        &:hover{
+
+        &:hover {
           transform: scale(1.1);
         }
 
@@ -240,6 +241,23 @@ a.button {
           width: 100%;
           padding: 10px;
         }
+      }
+    }
+  }
+}
+
+.mission_section {
+  .mission_wrap {
+    display: flex;
+    align-items: center;
+
+    .mission_text, .mission_img {
+      flex-basis: 50%;
+    }
+
+    .mission_img {
+      img {
+        width: 100%;
       }
     }
   }

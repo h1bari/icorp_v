@@ -244,4 +244,15 @@ a.button:hover {
   padding: 10px;
 }
 
+.mission_section .mission_wrap {
+  display: flex;
+  align-items: center;
+}
+.mission_section .mission_wrap .mission_text, .mission_section .mission_wrap .mission_img {
+  flex-basis: 50%;
+}
+.mission_section .mission_wrap .mission_img img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
