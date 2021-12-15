@@ -350,4 +350,19 @@ footer {
   height: 550px;
 }
 
+.about_section .about_wrap {
+  display: flex;
+}
+.about_section .about_wrap .about_information, .about_section .about_wrap .about_image {
+  flex-basis: 50%;
+}
+.about_section .about_wrap .about_information {
+  align-self: center;
+}
+.about_section .about_wrap .about_information p {
+  font-size: 23px;
+  font-weight: 400;
+  color: black;
+}
+
 /*# sourceMappingURL=style.css.map */
