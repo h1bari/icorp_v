@@ -135,6 +135,22 @@
 .header_section header .head_menu .menu li {
   display: inline-block;
   margin: 0 15px;
+  position: relative;
+}
+.header_section header .head_menu .menu li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1px;
+  background: #000;
+  width: 0;
+  transition: 1s;
+  bottom: -1px;
+}
+.header_section header .head_menu .menu li:hover:before {
+  width: 100%;
 }
 .header_section header .head_menu .menu li a {
   font-size: 18px;
@@ -296,6 +312,42 @@
 footer {
   padding: 100px;
   background: #60E4C7;
+}
+
+.active_menu {
+  border-bottom: 1px solid black;
+}
+
+.contact_section .contact_wrap {
+  display: flex;
+}
+.contact_section .contact_wrap .contact_information, .contact_section .contact_wrap .map {
+  flex-basis: 50%;
+}
+.contact_section .contact_wrap .contact_information {
+  justify-self: center;
+}
+.contact_section .contact_wrap .contact_information h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 15px;
+}
+.contact_section .contact_wrap .contact_information p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.contact_section .contact_wrap .contact_information a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  color: #3C8AFF;
+}
+.contact_section .contact_wrap .map iframe {
+  width: 100%;
+  height: 550px;
 }
 
 /*# sourceMappingURL=style.css.map */
