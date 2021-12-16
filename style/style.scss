@@ -433,3 +433,30 @@ footer {
     }
   }
 }
+
+//-------------------------------News----------------------------------
+.main_news {
+  .news_date {
+    @include flex(flex-end);
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    span {
+      border-bottom: 1px solid black;
+
+      &:nth-child(1) {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .news {
+    .news_head {
+      border: 1px solid black;
+      padding: 28px;
+      border-radius: 20px;
+      @include flex(space-between);
+      @include font(20px, 700);
+    }
+  }
+}
