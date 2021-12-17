@@ -389,9 +389,8 @@ footer {
 
     .about_image {
       img {
-        width: 100%;
+        width: 90%;
       }
-
     }
   }
 }
@@ -451,6 +450,8 @@ footer {
   }
 
   .news {
+    margin-bottom: 40px;
+
     .news_head {
       border: 1px solid black;
       padding: 28px;
@@ -458,5 +459,99 @@ footer {
       @include flex(space-between);
       @include font(20px, 700);
     }
+
+    .news_body {
+      margin-top: 20px;
+    }
   }
+}
+
+//------------------------------------Cabinet------------------------------------
+.sidebar {
+  display: inline-block;
+
+  .sidebar_menu {
+    .active_sidebar {
+      background: $main_color;
+
+    }
+
+
+    ul {
+      li {
+        transition: .5s;
+
+        &:hover {
+          background: $main_color;
+        }
+
+        margin-bottom: 15px;
+        border-radius: 18px;
+
+        a {
+          @include font(20px);
+          margin-left: 70px;
+          position: relative;
+          display: block;
+          padding: 15px;
+        }
+
+        .condition {
+          &:before {
+            background: url("../images/condition.png");
+            @include pseudo();
+            width: 35px;
+            height: 35px;
+            top: 15px;
+            left: -50px;
+          }
+        }
+
+        .payment {
+          &:before {
+            background: url("../images/payment.png");
+            @include pseudo();
+            width: 35px;
+            height: 35px;
+            top: 15px;
+            left: -50px;
+          }
+        }
+
+        .tariff {
+          &:before {
+            background: url("../images/tarif.png");
+            @include pseudo();
+            width: 35px;
+            height: 35px;
+            top: 15px;
+            left: -50px;
+          }
+        }
+
+        .profile {
+          &:before {
+            background: url("../images/profile.png");
+            @include pseudo();
+            width: 35px;
+            height: 35px;
+            top: 15px;
+            left: -50px;
+          }
+        }
+
+        .support {
+          &:before {
+            background: url("../images/support.png");
+            @include pseudo();
+            width: 35px;
+            height: 35px;
+            top: 15px;
+            left: -50px;
+          }
+        }
+      }
+    }
+  }
+
 }
