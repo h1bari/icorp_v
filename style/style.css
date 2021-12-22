@@ -537,21 +537,52 @@ footer {
 .main_screen {
   display: flex;
   padding-left: 50px;
+  width: 65%;
+  flex-direction: column;
 }
 .main_screen .personal_account_wrap {
   display: flex;
   align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
 }
 .main_screen .personal_account_wrap .personal_account, .main_screen .personal_account_wrap .address_user {
+  max-width: 356px;
+  width: 356px;
   border: 1px solid black;
   padding: 15px;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
   color: black;
-  text-align: center;
   max-height: 85px;
   height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_screen .personal_account_wrap .personal_account p:nth-child(2) {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+
+.form_inner_item input {
+  background: #F2F2F2;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  color: #6D6A6A;
+  border-radius: 8px;
+  max-width: 252px;
+  width: 252px;
+}
+.form_inner_item label {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
