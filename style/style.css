@@ -181,14 +181,14 @@
   width: 400px;
 }
 
-.our_tariff .tariff_wrap {
+.tariff_wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.our_tariff .tariff_wrap .tariff_item {
+.tariff_wrap .tariff_item {
   box-shadow: 0 0 20px 0 #00000040;
   border-radius: 25px;
   min-width: 350px;
@@ -196,20 +196,20 @@
   overflow: hidden;
   margin-bottom: 50px;
 }
-.our_tariff .tariff_wrap .tariff_item .item_header {
+.tariff_wrap .tariff_item .item_header {
   background: #60E4C7;
   padding: 15px;
   text-align: center;
 }
-.our_tariff .tariff_wrap .tariff_item .item_header img {
+.tariff_wrap .tariff_item .item_header img {
   width: 80px;
 }
-.our_tariff .tariff_wrap .tariff_item .item_header p {
+.tariff_wrap .tariff_item .item_header p {
   font-size: 15px;
   font-weight: 400;
   color: black;
 }
-.our_tariff .tariff_wrap .tariff_item .item_body {
+.tariff_wrap .tariff_item .item_body {
   height: 200px;
   max-height: 200px;
   display: flex;
@@ -219,14 +219,14 @@
   flex-wrap: wrap;
   padding: 20px;
 }
-.our_tariff .tariff_wrap .tariff_item .item_body p {
+.tariff_wrap .tariff_item .item_body p {
   font-size: 13px;
   font-weight: 400;
   color: black;
   margin-bottom: 10px;
   text-align: center;
 }
-.our_tariff .tariff_wrap .tariff_item .item_button {
+.tariff_wrap .tariff_item .item_button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,7 +237,7 @@
   width: 100%;
   transition: 0.5s;
 }
-.our_tariff .tariff_wrap .tariff_item .item_button:before {
+.tariff_wrap .tariff_item .item_button:before {
   content: "";
   display: block;
   position: absolute;
@@ -248,10 +248,10 @@
   width: 65%;
   top: 0;
 }
-.our_tariff .tariff_wrap .tariff_item .item_button:hover {
+.tariff_wrap .tariff_item .item_button:hover {
   transform: scale(1.1);
 }
-.our_tariff .tariff_wrap .tariff_item .item_button a {
+.tariff_wrap .tariff_item .item_button a {
   font-size: 17px;
   font-weight: 400;
   color: black;
@@ -537,7 +537,7 @@ footer {
 .main_screen {
   display: flex;
   padding-left: 50px;
-  width: 65%;
+  width: 80%;
   flex-direction: column;
 }
 .main_screen .personal_account_wrap {
@@ -568,6 +568,9 @@ footer {
   color: black;
 }
 
+.form_inner_item {
+  margin-top: 30px;
+}
 .form_inner_item input {
   background: #F2F2F2;
   padding: 10px;
@@ -583,6 +586,99 @@ footer {
   font-size: 25px;
   font-weight: 700;
   color: black;
+}
+.form_inner_item p {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  color: #6D6A6A;
+  margin-bottom: 10px;
+}
+.form_inner_item button {
+  background: none;
+  font-size: 14px;
+  color: #3C8AFF;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.main_screen .tariff_wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main_screen .tariff_wrap .tariff_item {
+  box-shadow: 0 0 20px 0 #00000040;
+  border-radius: 25px;
+  width: 275px;
+  min-width: auto;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.main_screen .tariff_wrap .tariff_item .item_header {
+  background: #60E4C7;
+  padding: 15px;
+  text-align: center;
+}
+.main_screen .tariff_wrap .tariff_item .item_header img {
+  width: 80px;
+}
+.main_screen .tariff_wrap .tariff_item .item_header p {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+.main_screen .tariff_wrap .tariff_item .item_body {
+  height: 200px;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.main_screen .tariff_wrap .tariff_item .item_body p {
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main_screen .tariff_wrap .tariff_item .item_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  position: relative;
+  width: 100%;
+  transition: 0.5s;
+}
+.main_screen .tariff_wrap .tariff_item .item_button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1px;
+  background: #000;
+  width: 65%;
+  top: 0;
+}
+.main_screen .tariff_wrap .tariff_item .item_button:hover {
+  transform: scale(1.1);
+}
+.main_screen .tariff_wrap .tariff_item .item_button a {
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
