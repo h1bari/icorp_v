@@ -553,5 +553,30 @@ footer {
       }
     }
   }
+}
+
+.cabinet_wrap {
+  display: flex;
+}
+
+.main_screen {
+  display: flex;
+  padding-left: 50px;
+  .personal_account_wrap {
+    display: flex;
+    align-items: flex-start;
+
+    .personal_account, .address_user {
+      border: 1px solid black;
+      padding: 15px;
+      border-radius: 20px;
+      @include font(20px, 500);
+      text-align: center;
+      max-height: 85px;
+      height: 85px;
+    }
+  }
+
 
 }
+
