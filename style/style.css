@@ -681,4 +681,17 @@ footer {
   padding: 10px;
 }
 
+.main_screen .form_wrap {
+  margin-top: 50px;
+}
+.main_screen .form_wrap form {
+  width: 100%;
+}
+.main_screen .form_wrap form .name_input, .main_screen .form_wrap form .tel_input {
+  display: inline-block;
+}
+.main_screen .form_wrap form .tel_input {
+  margin-left: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -692,3 +692,19 @@ footer {
   }
 }
 
+.main_screen {
+  .form_wrap {
+    margin-top: 50px;
+
+    form {
+      width: 100%;
+
+      .name_input, .tel_input {
+        display: inline-block;
+      }
+      .tel_input {
+        margin-left: 30px;
+      }
+    }
+  }
+}
