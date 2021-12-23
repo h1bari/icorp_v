@@ -568,7 +568,7 @@ footer {
     justify-content: space-around;
     width: 100%;
 
-    .personal_account, .address_user {
+    .personal_account, .address_user, .status {
       max-width: 356px;
       width: 356px;
       border: 1px solid black;
@@ -702,9 +702,34 @@ footer {
       .name_input, .tel_input {
         display: inline-block;
       }
+
       .tel_input {
         margin-left: 30px;
       }
     }
   }
 }
+
+.main_screen {
+  .personal_account_wrap {
+    .status {
+      margin-top: 30px;
+      flex-direction: row;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    .balance {
+      border: 1px solid black;
+      padding: 15px;
+      border-radius: 20px;
+      @include font(19px, 500);
+      box-shadow: 0 0 20px 0 #00000040;
+
+    }
+  }
+}
+
+

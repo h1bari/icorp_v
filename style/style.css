@@ -546,7 +546,7 @@ footer {
   justify-content: space-around;
   width: 100%;
 }
-.main_screen .personal_account_wrap .personal_account, .main_screen .personal_account_wrap .address_user {
+.main_screen .personal_account_wrap .personal_account, .main_screen .personal_account_wrap .address_user, .main_screen .personal_account_wrap .status {
   max-width: 356px;
   width: 356px;
   border: 1px solid black;
@@ -692,6 +692,23 @@ footer {
 }
 .main_screen .form_wrap form .tel_input {
   margin-left: 30px;
+}
+
+.main_screen .personal_account_wrap .status {
+  margin-top: 30px;
+  flex-direction: row;
+}
+.main_screen .personal_account_wrap .status img {
+  margin-right: 10px;
+}
+.main_screen .personal_account_wrap .balance {
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 19px;
+  font-weight: 500;
+  color: black;
+  box-shadow: 0 0 20px 0 #00000040;
 }
 
 /*# sourceMappingURL=style.css.map */
