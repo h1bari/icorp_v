@@ -702,7 +702,6 @@ footer {
   margin-right: 10px;
 }
 .main_screen .personal_account_wrap .balance {
-  border: 1px solid black;
   padding: 15px;
   border-radius: 20px;
   font-size: 19px;
@@ -720,9 +719,42 @@ footer {
   font-weight: 400;
   color: black;
   margin-left: 20px;
+  position: relative;
+}
+.main_screen .personal_account_wrap .balance .balance_header span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 2px;
+  background: #6D6A6A;
+  bottom: -15px;
+  left: -60px;
 }
 .main_screen .personal_account_wrap .balance .balance_header hr {
   margin-bottom: 20px;
+}
+.main_screen .personal_account_wrap .balance .balance_status {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+.main_screen .personal_account_wrap .balance .balance_status p {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+.main_screen .personal_account_wrap .balance .balance_status .balance_status_date p {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  color: #6D6A6A;
+  text-align: right;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
