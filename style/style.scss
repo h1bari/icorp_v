@@ -740,7 +740,7 @@ footer {
           &:before {
             @include pseudo();
             width: 150px;
-            height: 2px;
+            height: 1px;
             background: #6D6A6A;
             bottom: -15px;
             left: -60px;
@@ -773,6 +773,29 @@ footer {
           }
         }
       }
+    }
+
+    .user_tariff {
+      max-width: 356px;
+      width: 356px;
+      border: 1px solid black;
+      padding: 15px;
+      border-radius: 20px;
+      .balance_header {
+        @include font(19px, 400);
+        @include flex(flex-start);
+        position: relative;
+
+        &:before {
+          @include pseudo();
+          width: 90%;
+          height: 1px;
+          background: #6D6A6A;
+          bottom: 0;
+          left: 18px;
+        }
+      }
+
     }
   }
 }

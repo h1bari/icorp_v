@@ -728,7 +728,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   width: 150px;
-  height: 2px;
+  height: 1px;
   background: #6D6A6A;
   bottom: -15px;
   left: -60px;
@@ -755,6 +755,36 @@ footer {
   color: #6D6A6A;
   text-align: right;
   margin: 0;
+}
+.main_screen .personal_account_wrap .user_tariff {
+  max-width: 356px;
+  width: 356px;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 20px;
+}
+.main_screen .personal_account_wrap .user_tariff .balance_header {
+  font-size: 19px;
+  font-weight: 400;
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+.main_screen .personal_account_wrap .user_tariff .balance_header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 1px;
+  background: #6D6A6A;
+  bottom: 0;
+  left: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
