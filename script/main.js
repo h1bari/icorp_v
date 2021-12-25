@@ -7,10 +7,33 @@ $('.fade').slick({
     arrow: true,
 });
 
-lightGallery(document.getElementById('lightgallery'), {
+Fancybox.bind('[data-fancybox="gallery"]', {
+    dragToClose: false,
 
-    licenseKey: 'your_license_key',
-    speed: 500,
+    Toolbar: false,
+    closeButton: "top",
 
+    Image: {
+        zoom: false,
+    },
+
+    on: {
+        initCarousel: (fancybox) => {
+            const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+            fancybox.$container.style.setProperty(
+                "--bg-image",
+                `url("${slide.$thumb.src}")`
+            );
+        },
+        "Carousel.change": (fancybox, carousel, to, from) => {
+            const slide = carousel.slides[to];
+
+            fancybox.$container.style.setProperty(
+                "--bg-image",
+                `url("${slide.$thumb.src}")`
+            );
+        },
+    },
 });
 

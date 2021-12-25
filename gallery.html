@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Новости</title>
     <link rel="stylesheet" href="./style/slick.css">
-    <link rel="stylesheet" href="./style/lightgallery.min.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -35,7 +38,7 @@
         </header>
     </div>
 </section>
-<div class="main_gallery">
+<section class="main_gallery">
     <div class="container">
         <div class="gallery_item">
             <div class="gallery_header">
@@ -44,29 +47,33 @@
             <div class="gallery_description">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci enim neque nesciunt
                     numquam officia quas quos sequi! Aliquam autem itaque laboriosam quaerat. Aspernatur error
+                    laudantium nam soluta! Laboriosam, sapiente.Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Accusantium adipisci enim neque nesciunt
+                    numquam officia quas quos sequi! Aliquam autem itaque laboriosam quaerat. Aspernatur error
                     laudantium nam soluta! Laboriosam, sapiente.</p>
             </div>
-            <div class="gallery_prev_img " id="lightgallery">
-                <a href="./images/1.png" data-lg-size="1600-2400">
-                    <img src="./images/1.png" alt="">
-                </a>
-                <a href="./images/1.png" data-lg-size="1600-2400">
-                    <img src="./images/1.png" alt="">
-                </a>
-                <a href="./images/1.png" data-lg-size="1600-2400">
-                    <img src="./images/1.png" alt="">
-                </a>
+            <div class="gallery_prev_img">
 
-            </div>
-            <div class="more_btn">
-                <a href="#">Посмореть остальные фото</a>
+                <a data-fancybox="gallery" href="./images/1.png">
+                    <img class="rounded" src="./images/1.png" alt=""/>
+                </a>
+                <a data-fancybox="gallery" href="./images/2.png">
+                    <img class="rounded" src="./images/2.png" alt=""/>
+                </a>
+                <a data-fancybox="gallery" href="./images/3.png">
+                    <img class="rounded" src="./images/3.png"/>
+                </a>
             </div>
         </div>
+        <div class="more_btn">
+            <a href="#">Посмореть остальные фото</a>
+        </div>
     </div>
-</div>
+</section>
+
 <script src="./script/jquery-3.6.0.min.js"></script>
 <script src="./script/slick.min.js"></script>
-<script src="./script/lightgallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="./script/main.js"></script>
 </body>
 </html>

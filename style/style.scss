@@ -819,4 +819,22 @@ footer {
   }
 }
 
+.gallery_prev_img {
+  @include flex(space-around);
+  margin-top: 30px;
+
+  a {
+    width: 32%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.more_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
