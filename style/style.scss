@@ -781,6 +781,7 @@ footer {
       border: 1px solid black;
       padding: 15px;
       border-radius: 20px;
+
       .balance_header {
         @include font(19px, 400);
         @include flex(flex-start);
@@ -791,11 +792,29 @@ footer {
           width: 90%;
           height: 1px;
           background: #6D6A6A;
-          bottom: 0;
+          bottom: -4px;
           left: 18px;
         }
       }
+    }
+  }
+}
 
+.main_tariff {
+  @include flex(flex-start);
+  padding-top: 20px;
+
+  .tariff_info {
+    margin-left: 15px;
+    margin-bottom: 20px;
+
+    .tariff_name {
+      @include font(15px);
+    }
+
+    .internet_speed {
+      @include font(14px);
+      color: #6D6A6A;
     }
   }
 }
