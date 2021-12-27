@@ -379,10 +379,10 @@ footer {
   flex-wrap: wrap;
 }
 .about_infoSection .about_info_wrap .about_info_item {
-  width: 410px;
+  width: 330px;
   max-height: 450px;
   height: 450px;
-  padding: 40px 25px;
+  padding: 25px 25px;
   border-radius: 35px;
   box-shadow: 0 0 20px 0 #00000040;
   display: flex;
@@ -390,6 +390,7 @@ footer {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .about_infoSection .about_info_wrap .about_info_item .item_img {
   border-radius: 50%;

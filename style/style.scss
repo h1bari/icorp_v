@@ -399,13 +399,14 @@ footer {
     @include flex(space-around);
 
     .about_info_item {
-      width: 410px;
+      width: 330px;
       max-height: 450px;
       height: 450px;
-      padding: 40px 25px;
+      padding: 25px 25px;
       border-radius: 35px;
       box-shadow: 0 0 20px 0 #00000040;
       @include flex(space-between, column);
+      flex-wrap: nowrap;
 
       .item_img {
         border-radius: 50%;

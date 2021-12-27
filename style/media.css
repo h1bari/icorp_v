@@ -2,6 +2,10 @@
     .main_screen .personal_account_wrap .user_tariff {
         margin-top: 30px;
     }
+
+    .about_infoSection .about_info_wrap .about_info_item {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -49,6 +53,10 @@
 
     .header_section {
         overflow-x: hidden;
+    }
+
+    .about_section .about_wrap .about_information p {
+        font-size: 18px;
     }
 
 
@@ -119,6 +127,30 @@
 
     .contact_section .contact_wrap {
         flex-direction: column;
+    }
+
+    .info_description {
+        flex-basis: 50%;
+        margin-bottom: 50px;
+    }
+
+    .contact_section .contact_wrap .contact_information {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .about_section .about_wrap {
+        flex-direction: column-reverse;
+    }
+
+    .about_section .about_wrap .about_image img {
+        width: 50%;
+    }
+
+    .about_section .about_wrap .about_image {
+        text-align: center;
     }
 }
 
