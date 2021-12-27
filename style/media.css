@@ -107,6 +107,15 @@
     .tariff_wrap .tariff_item {
         width: 80%;
     }
+
+    .main_screen .form_wrap form .tel_input {
+        margin-left: 0;
+    }
+
+    .main_screen .form_wrap form .name_input, .main_screen .form_wrap form .tel_input {
+        width: 100%;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -114,6 +123,7 @@
         width: 50%;
     }
 }
+
 
 @media screen and (max-width: 560px) {
     .form_wrap form {
@@ -156,8 +166,22 @@
     }
 
     .main_screen .personal_account_wrap .personal_account, .main_screen .personal_account_wrap .address_user, .main_screen .personal_account_wrap .status {
-        width: auto;
+        width: 90%;
+        margin: auto;
     }
+
+    .form_inner_item button {
+        padding: 15px;
+    }
+
+    .personal_information {
+        width: 100%;
+    }
+
+    .main_screen .personal_account_wrap .personal_account {
+        margin-bottom: 30px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
