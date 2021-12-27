@@ -884,8 +884,8 @@ footer {
   height: 40px;
   background: none;
   cursor: pointer;
-  overflow: hidden;
   transition: 0.5s;
+  right: 20px;
 }
 .navbar-toggle span {
   position: relative;
