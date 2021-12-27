@@ -926,4 +926,11 @@ footer {
   transform: rotate(-45deg);
 }
 
+.header_section header .active {
+  position: relative;
+}
+.header_section header .active .menu li {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */

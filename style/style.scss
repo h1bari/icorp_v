@@ -951,4 +951,17 @@ footer {
   }
 }
 
+.header_section{
+  header{
+    .active {
+      position: relative;
+      .menu{
+        li {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 
