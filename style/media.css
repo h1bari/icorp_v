@@ -18,7 +18,7 @@
 
     .header_section header .menu {
         position: absolute;
-        top: -17px;
+        top: -25px;
         z-index: 1001;
         background: #60E4C7;
         border-radius: 10px 0 0 10px;
@@ -35,17 +35,53 @@
 
     .header_section header .head_menu .menu li {
         display: block;
-        padding: 10px;
     }
 
     .header_section header .head_menu .menu li a {
         color: white;
+        padding: 20px;
+        width: 100%;
+        display: block;
     }
 
     .header_section {
         overflow-x: hidden;
     }
 
+}
+
+@media screen and (max-width: 992px) {
+    .header_section br {
+        display: none;
+    }
+
+    .slide_content {
+        text-align: center;
+    }
+
+    .header_section .header_slider .fade .slide .slide_img img {
+        width: 100px;
+    }
+
+    .header_section .header_slider .fade .slide {
+        flex-direction: column-reverse;
+    }
+
+    .header_section .header_slider .fade .slide .slide_content .connect_button {
+        justify-content: center;
+    }
+
+    .block_wrap {
+        flex-direction: column;
+    }
+
+    .block_wrap .block_img img {
+        width: 150px;
+    }
+
+    .block_wrap .block_img, .block_wrap .block_info {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
