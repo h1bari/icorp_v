@@ -10,6 +10,7 @@
     .navbar-toggle {
         display: block;
         position: relative;
+        right: 0;
     }
 
     .header_section header {
@@ -50,7 +51,11 @@
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+
     .header_section br {
         display: none;
     }
@@ -82,16 +87,49 @@
     .block_wrap .block_img, .block_wrap .block_info {
         width: 100%;
     }
+
+    .mission_section .mission_wrap {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mission_section .mission_wrap .mission_img {
+        text-align: center;
+    }
+
+    .mission_section .mission_wrap .mission_img img {
+        width: 30%;
+    }
+
+    .tariff_wrap .tariff_item {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
+    .mission_section .mission_wrap .mission_img img {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 560px) {
+    .form_wrap form {
+        width: 100%;
+    }
 
+    .mission_section .mission_wrap .mission_text p {
+        font-size: 18px;
+    }
+
+    .section_head h2 {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-
+    .tariff_wrap .tariff_item {
+        width: 95%;
+        min-height: auto;
+        min-width: auto;
+    }
 }
