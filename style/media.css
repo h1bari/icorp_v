@@ -1,5 +1,7 @@
 @media screen and (max-width: 1140px) {
-
+    .main_screen .personal_account_wrap .user_tariff {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -18,14 +20,14 @@
     }
 
     .header_section header .menu {
-        position: absolute;
-        top: -25px;
+        position: fixed;
+        top: 0;
         z-index: 1001;
         background: #60E4C7;
         border-radius: 10px 0 0 10px;
         width: 50vw;
         height: 50vh;
-        right: -100%;
+        right: -120%;
         transition: 1s;
     }
 
@@ -48,6 +50,7 @@
     .header_section {
         overflow-x: hidden;
     }
+
 
 }
 
@@ -123,6 +126,37 @@
 
     .section_head h2 {
         font-size: 28px;
+    }
+
+    .header_section header .menu {
+        width: 100vw;
+    }
+
+    .header_section header .head_menu .menu li {
+        width: 60%;
+    }
+
+    .personal_account {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .cabinet_wrap {
+        flex-direction: column;
+    }
+
+    .main_screen {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main_screen .tariff_wrap .tariff_item {
+        width: 90%;
+    }
+
+    .main_screen .personal_account_wrap .personal_account, .main_screen .personal_account_wrap .address_user, .main_screen .personal_account_wrap .status {
+        width: auto;
     }
 }
 

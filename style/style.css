@@ -544,6 +544,7 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
 }
 .main_screen .personal_account_wrap .personal_account, .main_screen .personal_account_wrap .address_user, .main_screen .personal_account_wrap .status {
@@ -884,7 +885,6 @@ footer {
   cursor: pointer;
   overflow: hidden;
   transition: 0.5s;
-  z-index: 10000;
 }
 .navbar-toggle span {
   position: relative;
@@ -917,7 +917,7 @@ footer {
 
 .close span {
   background: #fff;
-
+  z-index: 10000;
 }
 .close span:nth-child(1):before {
   top: -50%;
