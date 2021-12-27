@@ -876,7 +876,70 @@ footer {
     &:hover:after {
       width: 100%;
     }
-
   }
 }
+
+.navbar-toggle {
+  width: 45px;
+  height: 40px;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    background: #000;
+
+    &:before {
+      @include pseudo();
+      width: 45px;
+      height: 5px;
+      background: #000;
+      border-radius: 10px;
+    }
+
+    &:nth-child(1) {
+      &:before {
+        top: -12px;
+      }
+    }
+
+    &:nth-child(2) {
+      &:before {
+        top: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      &:before {
+        top: 12px;
+      }
+    }
+  }
+}
+
+.close {
+    span {
+      &:nth-child(1) {
+        &:before {
+          top: -50%;
+          transform: rotate(45deg);
+        }
+      }
+
+      &:nth-child(2) {
+        &:before {
+          top: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        &:before {
+          top: 50%;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+  }
 

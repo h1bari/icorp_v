@@ -876,4 +876,48 @@ footer {
   width: 100%;
 }
 
+.navbar-toggle {
+  width: 45px;
+  height: 40px;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.navbar-toggle span {
+  position: relative;
+  background: #000;
+}
+.navbar-toggle span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 5px;
+  background: #000;
+  border-radius: 10px;
+}
+.navbar-toggle span:nth-child(1):before {
+  top: -12px;
+}
+.navbar-toggle span:nth-child(2):before {
+  top: 0;
+}
+.navbar-toggle span:nth-child(3):before {
+  top: 12px;
+}
+
+.close span:nth-child(1):before {
+  top: -50%;
+  transform: rotate(45deg);
+}
+.close span:nth-child(2):before {
+  top: 0;
+}
+.close span:nth-child(3):before {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
 /*# sourceMappingURL=style.css.map */
