@@ -127,7 +127,7 @@ $main_color: #60E4C7;
       font-size: 0;
 
       img {
-        width: 150px;
+        width: 130px;
       }
     }
 
@@ -879,16 +879,20 @@ footer {
   }
 }
 
+
 .navbar-toggle {
+  display: none;
   width: 45px;
   height: 40px;
   background: none;
   cursor: pointer;
   overflow: hidden;
+  transition: .5s;
 
   span {
     position: relative;
     background: #000;
+    transition: .5s;
 
     &:before {
       @include pseudo();
@@ -896,6 +900,8 @@ footer {
       height: 5px;
       background: #000;
       border-radius: 10px;
+      transition: .5s;
+      transition-delay: .1s;
     }
 
     &:nth-child(1) {
@@ -907,6 +913,7 @@ footer {
     &:nth-child(2) {
       &:before {
         top: 0;
+        transition: 1s;
       }
     }
 
@@ -919,27 +926,29 @@ footer {
 }
 
 .close {
-    span {
-      &:nth-child(1) {
-        &:before {
-          top: -50%;
-          transform: rotate(45deg);
-        }
-      }
 
-      &:nth-child(2) {
-        &:before {
-          top: 0;
-        }
-      }
 
-      &:nth-child(3) {
-        &:before {
-          top: 50%;
-          transform: rotate(-45deg);
-        }
+  span {
+    &:nth-child(1) {
+      &:before {
+        top: -50%;
+        transform: rotate(45deg);
       }
     }
 
+    &:nth-child(2) {
+      &:before {
+        display: none;
+      }
+    }
+
+    &:nth-child(3) {
+      &:before {
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+    }
   }
+}
+
 

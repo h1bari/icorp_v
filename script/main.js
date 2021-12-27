@@ -1,3 +1,10 @@
+$(document).ready(function () {
+    $(".navbar-toggle").on("click", function () {
+        $(".head_menu").hasClass("active") ? ($(this).parent(".head_menu").removeClass("active"),
+            $(this).removeClass("close")) : ($(this).parent(".head_menu").addClass("active"),
+            $(this).addClass("close"))
+    })
+});
 $('.fade').slick({
     dots: true,
     infinite: true,
@@ -36,12 +43,6 @@ Fancybox.bind('[data-fancybox="gallery"]', {
         },
     },
 });
-$(document).ready(function () {
-    $(".navbar-toggle").on("click", function () {
-        $(".head_menu").hasClass("active") ? ($(this).parent(".head_menu").removeClass("active"),
-            $(this).removeClass("close")) : ($(this).parent(".head_menu").addClass("active"),
-            $(this).addClass("close"))
-    })
-});
+
 
 

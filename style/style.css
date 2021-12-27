@@ -130,7 +130,7 @@
   font-size: 0;
 }
 .header_section header .logo img {
-  width: 150px;
+  width: 130px;
 }
 .header_section header .head_menu .menu li {
   display: inline-block;
@@ -877,15 +877,18 @@ footer {
 }
 
 .navbar-toggle {
+  display: none;
   width: 45px;
   height: 40px;
   background: none;
   cursor: pointer;
   overflow: hidden;
+  transition: 0.5s;
 }
 .navbar-toggle span {
   position: relative;
   background: #000;
+  transition: 0.5s;
 }
 .navbar-toggle span:before {
   content: "";
@@ -897,12 +900,15 @@ footer {
   height: 5px;
   background: #000;
   border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.1s;
 }
 .navbar-toggle span:nth-child(1):before {
   top: -12px;
 }
 .navbar-toggle span:nth-child(2):before {
   top: 0;
+  transition: 1s;
 }
 .navbar-toggle span:nth-child(3):before {
   top: 12px;
@@ -913,7 +919,7 @@ footer {
   transform: rotate(45deg);
 }
 .close span:nth-child(2):before {
-  top: 0;
+  display: none;
 }
 .close span:nth-child(3):before {
   top: 50%;
