@@ -153,7 +153,7 @@
   width: 100%;
 }
 .header_section header .head_menu .menu li a {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   color: black;
 }
@@ -884,6 +884,7 @@ footer {
   cursor: pointer;
   overflow: hidden;
   transition: 0.5s;
+  z-index: 10000;
 }
 .navbar-toggle span {
   position: relative;
@@ -914,6 +915,10 @@ footer {
   top: 12px;
 }
 
+.close span {
+  background: #fff;
+
+}
 .close span:nth-child(1):before {
   top: -50%;
   transform: rotate(45deg);
@@ -924,13 +929,6 @@ footer {
 .close span:nth-child(3):before {
   top: 50%;
   transform: rotate(-45deg);
-}
-
-.header_section header .active {
-  position: relative;
-}
-.header_section header .active .menu li {
-  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

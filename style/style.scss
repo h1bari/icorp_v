@@ -155,7 +155,7 @@ $main_color: #60E4C7;
           }
 
           a {
-            @include font(18px);
+            @include font(17px);
           }
         }
       }
@@ -929,6 +929,9 @@ footer {
 
 
   span {
+    background: #fff;
+    z-index: 10000;
+
     &:nth-child(1) {
       &:before {
         top: -50%;
@@ -951,17 +954,5 @@ footer {
   }
 }
 
-.header_section{
-  header{
-    .active {
-      position: relative;
-      .menu{
-        li {
-          display: block;
-        }
-      }
-    }
-  }
-}
 
 

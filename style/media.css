@@ -3,9 +3,49 @@
 }
 
 @media screen and (max-width: 992px) {
+    .close span:before {
+        background: #fff;
+    }
+
     .navbar-toggle {
         display: block;
+        position: relative;
     }
+
+    .header_section header {
+        position: relative;
+    }
+
+    .header_section header .menu {
+        position: absolute;
+        top: -17px;
+        z-index: 1001;
+        background: #60E4C7;
+        border-radius: 10px 0 0 10px;
+        width: 50vw;
+        height: 50vh;
+        right: -100%;
+        transition: 1s;
+    }
+
+    .header_section header .active .menu {
+        transition: 1s;
+        right: calc(-4px - 5%);
+    }
+
+    .header_section header .head_menu .menu li {
+        display: block;
+        padding: 10px;
+    }
+
+    .header_section header .head_menu .menu li a {
+        color: white;
+    }
+
+    .header_section {
+        overflow-x: hidden;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
