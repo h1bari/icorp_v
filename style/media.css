@@ -116,6 +116,10 @@
         width: 100%;
         display: block;
     }
+
+    .contact_section .contact_wrap {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 768px) {
