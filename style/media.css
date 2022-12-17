@@ -9,6 +9,7 @@
 }
 
 @media screen and (max-width: 992px) {
+
     .close span:before {
         background: #fff;
     }
@@ -18,9 +19,15 @@
         position: relative;
 
     }
-
+    .navbar-toggle.close{
+        position: fixed;
+        z-index: 2000;
+        top: 37px;
+        right: 70px;
+    }
     .header_section header {
         position: relative;
+        min-height: 76px;
     }
 
     .header_section header .menu {
@@ -30,7 +37,7 @@
         background: #60E4C7;
         border-radius: 10px 0 0 10px;
         width: 50vw;
-        height: 50vh;
+        height: auto;
         right: -120%;
         transition: 1s;
     }
@@ -38,6 +45,7 @@
     .header_section header .active .menu {
         transition: 1s;
         right: calc(-4px - 5%);
+        padding-top: 100px;
     }
 
     .header_section header .head_menu .menu li {
