@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./style/slick.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media.css">
+    <script defer src="./script/jquery-3.6.0.min.js"></script>
+    <script defer src="./script/slick.min.js"></script>
+    <script defer src="./script/main.js"></script>
+    <script defer src="./script/validation.js"></script>
 </head>
 <body>
 <section class="header_section">
@@ -166,14 +170,23 @@
                 І МИ ВАМ ЗАТЕЛЕФОНУЄМО</h2>
         </div>
         <div class="form_wrap">
-            <form action="">
+            <form action="https://formspree.io/f/mdorbdae"
+                  method="POST" id="myForm" onsubmit="validateForm(event)">
                 <div class="name_input">
                     <label for="name">Ім'я <sup>*</sup></label>
-                    <input type="text" id="name" required>
+                    <input type="text" name="name" id="name" required>
+                    <input type="hidden" name="_language" value="uk" />
+                    <span class="error" id="nameError"></span>
                 </div>
                 <div class="tel_input">
                     <label for="tel">Телефон <sup>*</sup></label>
-                    <input type="text" id="tel" required placeholder="+38 (____) ____ ___ ___">
+                    <input type="tel" name="tel" id="tel" required placeholder="+38 (____) ____ ___ ___">
+                    <span class="error" id="telError"></span>
+                </div>
+                <div class="email_input">
+                    <label for="_replyto">Email <sup>*</sup></label>
+                    <input type="email" name="_replyto" id="_replyto" required>
+                    <span class="error" id="emailError"></span>
                 </div>
                 <div class="connect_button">
                     <button type="submit" class="button">Підключити</button>
@@ -182,11 +195,6 @@
         </div>
     </div>
 </section>
-<footer>
-
-</footer>
-<script src="./script/jquery-3.6.0.min.js"></script>
-<script src="./script/slick.min.js"></script>
-<script src="./script/main.js"></script>
+<footer></footer>
 </body>
 </html>

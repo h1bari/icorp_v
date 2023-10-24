@@ -16,9 +16,15 @@ $main_color: #60E4C7;
 }
 
 .container {
-  //max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+
+.error{
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 15px;
 }
 
 .button {
@@ -289,7 +295,6 @@ $main_color: #60E4C7;
 
 .form_wrap {
   @include flex(center, column);
-
   form {
     width: 400px;
 
@@ -298,8 +303,9 @@ $main_color: #60E4C7;
     }
 
     label {
-      margin-left: 30px;
+      margin-left: 20px;
       font-size: 13px;
+      margin-bottom: 5px;
     }
 
     input {
@@ -308,7 +314,6 @@ $main_color: #60E4C7;
       border-radius: 15px;
       font-size: 20px;
       padding: 5px 15px;
-      margin-bottom: 15px;
     }
 
     .connect_button {
